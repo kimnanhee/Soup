@@ -119,7 +119,7 @@ class Ui_MainWindow(object):
         self.label_movie.setText(_translate("MainWindow", "Movie"))
         self.label_best.setText(_translate("MainWindow", "Book"))
         self.label_10.setText(_translate("MainWindow", "Top 10"))
-        self.label_baekjoon.setText(_translate("MainWindow", "Music"))
+        self.label_baekjoon.setText(_translate("MainWindow", "Baekjoon"))
 import image_rc
 
 

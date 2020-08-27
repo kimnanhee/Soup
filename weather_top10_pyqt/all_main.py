@@ -29,7 +29,7 @@ def read_thread(ui):
 			a = title .find('strong')
 			if a and num<10:
 				num+=1
-				arr+=(str(num)+' - '+a.get_text()+'\n')
+				arr+=(str(num)+'-'+a.get_text()+'\n')
 		ui.text_best.setText(arr)
 
 		url = "https://movie.naver.com/movie/sdb/rank/rmovie.nhn" # 네이버 영화 순위
@@ -43,7 +43,7 @@ def read_thread(ui):
 			name = movie .find('a')
 			if name and num<10: # top 10까지 출력
 				num+=1
-				arr+=(str(num)+' - '+name.get_text()+'\n')
+				arr+=(str(num)+'-'+name.get_text()+'\n')
 		ui.text_movie.setText(arr)
 
 		url = "https://www.acmicpc.net/problem/ranking" # 백준 문제 순위
@@ -62,9 +62,9 @@ def read_thread(ui):
 				if num<10:
 					num+=1
 					if num<6:
-						arr+=(str(num)+' - '+a+'\n')
+						arr+=(str(num)+'-'+a+'\n')
 					else:
-						arr_2+=(str(num)+' - '+a+'\n')
+						arr_2+=(str(num)+'-'+a+'\n')
 		ui.text_baekjoon.setText(arr)
 		ui.text_baekjoon_2.setText(arr_2)
 		sleep(5)
